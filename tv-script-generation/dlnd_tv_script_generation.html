@@ -12592,7 +12592,7 @@ Default GPU Device: /gpu:0
 <span class="c1"># Sequence Length</span>
 <span class="n">seq_length</span> <span class="o">=</span> <span class="mi">12</span>
 <span class="c1"># Learning Rate</span>
-<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.05</span>
+<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.02</span>
 <span class="c1"># Show stats for every n number of batches</span>
 <span class="n">show_every_n_batches</span> <span class="o">=</span> <span class="mi">100</span>
 
@@ -12668,7 +12668,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12718,17 +12718,17 @@ Default GPU Device: /gpu:0
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Epoch   0 Batch    0/11   train_loss = 8.820
-Epoch   9 Batch    1/11   train_loss = 2.551
-Epoch  18 Batch    2/11   train_loss = 1.721
-Epoch  27 Batch    3/11   train_loss = 1.421
-Epoch  36 Batch    4/11   train_loss = 1.399
-Epoch  45 Batch    5/11   train_loss = 1.291
-Epoch  54 Batch    6/11   train_loss = 1.195
-Epoch  63 Batch    7/11   train_loss = 1.230
-Epoch  72 Batch    8/11   train_loss = 1.132
-Epoch  81 Batch    9/11   train_loss = 1.154
-Epoch  90 Batch   10/11   train_loss = 1.130
+<pre>Epoch   0 Batch    0/11   train_loss = 8.824
+Epoch   9 Batch    1/11   train_loss = 2.274
+Epoch  18 Batch    2/11   train_loss = 1.274
+Epoch  27 Batch    3/11   train_loss = 0.690
+Epoch  36 Batch    4/11   train_loss = 0.499
+Epoch  45 Batch    5/11   train_loss = 0.385
+Epoch  54 Batch    6/11   train_loss = 0.383
+Epoch  63 Batch    7/11   train_loss = 0.911
+Epoch  72 Batch    8/11   train_loss = 0.346
+Epoch  81 Batch    9/11   train_loss = 0.292
+Epoch  90 Batch   10/11   train_loss = 0.287
 Model Trained and Saved
 </pre>
 </div>
@@ -12749,7 +12749,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12774,7 +12774,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12812,7 +12812,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_tensors</span><span class="p">(</span><span class="n">loaded_graph</span><span class="p">):</span>
@@ -12841,6 +12841,24 @@ Model Trained and Saved
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Tests Passed
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -12853,7 +12871,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">pick_word</span><span class="p">(</span><span class="n">probabilities</span><span class="p">,</span> <span class="n">int_to_vocab</span><span class="p">):</span>
@@ -12878,6 +12896,24 @@ Model Trained and Saved
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Tests Passed
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -12890,7 +12926,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gen_length</span> <span class="o">=</span> <span class="mi">200</span>
@@ -12940,6 +12976,37 @@ Model Trained and Saved
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>moe_szyslak: well, if this guy&#39;s ridin&#39; your rump, why don&#39;t you just listen.
+homer_simpson:(puzzled) what! on! i want to spend the coaster.
+homer_simpson: hey, where&#39;d don&#39;t you doin&#39; in my dump?
+moe_szyslak:(explaining) part of my new rice wine here.
+moe_szyslak: hey, wait a minute. i know that voice.
+moe_szyslak: if you mean like a domestic disturbance my house.
+moe_szyslak: oh, you didn&#39;t write any of it.
+carl_carlson: hey, it&#39;s time. turn it on looks. it is.
+moe_szyslak: where, hey, hey, uh, you guys are eurotrash, huh? how&#39;s that, homer?
+homer_simpson:(sweet) yeah. homer sold his wife for a night guy.
+moe_szyslak: oh, homer, i been the world&#39;s biggest rat...
+moe_szyslak: homer, i recommend getting on fire.
+moe_szyslak:(&#34; back off, homer) hey, i wonder how much air is in here.
+homer_simpson: man, did you get it out of
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
